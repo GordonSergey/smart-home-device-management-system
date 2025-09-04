@@ -8,7 +8,7 @@ import lombok.ToString;
 import lombok.experimental.FieldDefaults;
 import ru.yandex.practicum.enums.DeviceType;
 import ru.yandex.practicum.enums.HubEventType;
-import ru.yandex.practicum.model.hub.HubEvent;
+import ru.yandex.practicum.model.HubEvent;
 
 @Getter
 @Setter

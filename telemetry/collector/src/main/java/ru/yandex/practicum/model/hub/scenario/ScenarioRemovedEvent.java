@@ -2,7 +2,7 @@ package ru.yandex.practicum.model.hub.scenario;
 
 import jakarta.validation.constraints.Size;
 import ru.yandex.practicum.enums.HubEventType;
-import ru.yandex.practicum.model.hub.HubEvent;
+import ru.yandex.practicum.model.HubEvent;
 
 public class ScenarioRemovedEvent extends HubEvent {
 

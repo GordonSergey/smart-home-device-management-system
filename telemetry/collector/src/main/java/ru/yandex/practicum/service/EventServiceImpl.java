@@ -17,8 +17,8 @@ import ru.yandex.practicum.exception.SendMessageException;
 import ru.yandex.practicum.exception.SerializationException;
 import ru.yandex.practicum.mapper.HubEventMapper;
 import ru.yandex.practicum.mapper.SensorEventMapper;
-import ru.yandex.practicum.model.hub.HubEvent;
-import ru.yandex.practicum.model.sensor.SensorEvent;
+import ru.yandex.practicum.model.HubEvent;
+import ru.yandex.practicum.model.hub.sensor.SensorEvent;
 
 import java.util.concurrent.TimeoutException;
 import java.util.function.Function;
