@@ -7,7 +7,7 @@ import lombok.Setter;
 import lombok.ToString;
 import lombok.experimental.FieldDefaults;
 import ru.yandex.practicum.enums.HubEventType;
-import ru.yandex.practicum.model.HubEvent;
+import ru.yandex.practicum.model.hub.HubEvent;
 import ru.yandex.practicum.model.hub.device.DeviceAction;
 
 import java.util.List;

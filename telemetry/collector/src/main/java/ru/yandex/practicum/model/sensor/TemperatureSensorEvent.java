@@ -1,4 +1,4 @@
-package ru.yandex.practicum.model.hub.sensor;
+package ru.yandex.practicum.model.sensor;
 
 import lombok.AccessLevel;
 import lombok.Getter;

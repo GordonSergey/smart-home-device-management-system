@@ -1,4 +1,4 @@
-package ru.yandex.practicum.model.hub.sensor;
+package ru.yandex.practicum.model.sensor;
 
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -11,7 +11,7 @@ import ru.yandex.practicum.enums.SensorEventType;
 @Setter
 @ToString(callSuper = true)
 @FieldDefaults(level = AccessLevel.PRIVATE)
-public class LightSensorEvent extends SensorEvent{ //Событие датчика освещенности, содержащее информацию о качестве связи и уровне освещенности
+public class LightSensorEvent extends SensorEvent { //Событие датчика освещенности, содержащее информацию о качестве связи и уровне освещенности
     Integer linkQuality; //Качество связи
     Integer luminosity; //Уровень освещенности
 
