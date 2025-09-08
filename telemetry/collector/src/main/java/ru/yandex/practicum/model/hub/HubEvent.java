@@ -1,4 +1,4 @@
-package ru.yandex.practicum.model;
+package ru.yandex.practicum.model.hub;
 
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
@@ -14,6 +14,7 @@ import ru.yandex.practicum.model.hub.device.DeviceAddedEvent;
 import ru.yandex.practicum.model.hub.device.DeviceRemovedEvent;
 import ru.yandex.practicum.model.hub.scenario.ScenarioAddedEvent;
 import ru.yandex.practicum.model.hub.scenario.ScenarioRemovedEvent;
+
 import java.time.Instant;
 
 @JsonTypeInfo(
@@ -35,6 +36,7 @@ public abstract class HubEvent {
     @NotBlank
     String hubId;
     Instant timestamp = Instant.now();
+
     @NotNull
     public abstract HubEventType getType();
 
