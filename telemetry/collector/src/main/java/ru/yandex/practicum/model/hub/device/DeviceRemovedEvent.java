@@ -7,7 +7,7 @@ import lombok.Setter;
 import lombok.ToString;
 import lombok.experimental.FieldDefaults;
 import ru.yandex.practicum.enums.HubEventType;
-import ru.yandex.practicum.model.HubEvent;
+import ru.yandex.practicum.model.hub.HubEvent;
 
 @Getter
 @Setter
@@ -16,6 +16,7 @@ import ru.yandex.practicum.model.HubEvent;
 public class DeviceRemovedEvent extends HubEvent {
     @NotBlank
     String id;
+
     @Override
     public HubEventType getType() {
         return HubEventType.DEVICE_REMOVED;

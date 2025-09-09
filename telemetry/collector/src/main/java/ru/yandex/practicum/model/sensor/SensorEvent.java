@@ -1,4 +1,4 @@
-package ru.yandex.practicum.model.hub.sensor;
+package ru.yandex.practicum.model.sensor;
 
 import com.fasterxml.jackson.annotation.JsonSubTypes;
 import com.fasterxml.jackson.annotation.JsonTypeInfo;
@@ -35,6 +35,7 @@ public abstract class SensorEvent {
     @NotBlank
     String hubId;
     Instant timestamp = Instant.now();
+
     @NotNull
     public abstract SensorEventType getType();
 }
