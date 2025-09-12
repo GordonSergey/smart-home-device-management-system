@@ -8,7 +8,7 @@ import lombok.ToString;
 import lombok.experimental.FieldDefaults;
 import ru.yandex.practicum.enums.DeviceType;
 import ru.yandex.practicum.enums.HubEventType;
-import ru.yandex.practicum.model.HubEvent;
+import ru.yandex.practicum.model.hub.HubEvent;
 
 @Getter
 @Setter
@@ -20,7 +20,7 @@ public class DeviceAddedEvent extends HubEvent {
     DeviceType deviceType;
 
     @Override
-    public HubEventType getType(){
+    public HubEventType getType() {
         return HubEventType.DEVICE_ADDED;
     }
 }
