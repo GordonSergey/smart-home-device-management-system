@@ -12,6 +12,9 @@ import ru.yandex.practicum.model.ConditionType;
 
 @Mapper(componentModel = "spring")
 public interface ConditionMapper {
+
+    @Mapping(target = "id", ignore = true)
+    @Mapping(target = "scenarioConditions", ignore = true)
     @Mapping(target = "type", source = "condition.type")
     @Mapping(target = "operationType", source = "condition.operation")
     @Mapping(target = "value", source = "condition.value", qualifiedByName = "mapValue")
@@ -24,6 +27,7 @@ public interface ConditionMapper {
     default ConditionOperationType map(ConditionOperationTypeAvro operation) {
         return ConditionOperationType.valueOf(operation.name());
     }
+
     @Named("mapValue")
     default Integer mapValue(Object value) {
         if (value instanceof Integer) {
